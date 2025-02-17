@@ -1,6 +1,7 @@
-const path = require('path');
+import path from 'path';
+const __dirname = import.meta.dirname; // node 20.11 or later
 
-module.exports = {
+export default {
     entry: './lib/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
