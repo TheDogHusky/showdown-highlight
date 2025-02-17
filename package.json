@@ -1,8 +1,10 @@
 {
   "scripts": {
-    "test": "node test/index.js"
+    "test": "node test/index.js",
+    "build": "webpack --mode=production --config webpack.config.js"
   },
   "name": "showdown-highlight",
+  "type": "module",
   "description": "A Showdown extension for highlight the code blocks.",
   "keywords": [
     "showdown",
@@ -44,7 +46,12 @@
     "showdown": "^2.0.3"
   },
   "devDependencies": {
-    "tester": "^1.4.5"
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "babel-loader": "^9.2.1",
+    "tester": "^1.4.5",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
   },
   "blah": {
     "description": "This package uses [`highlight.js`](https://highlightjs.org) to highlight code blocks in [Showdown](https://github.com/showdownjs/showdown) output. :rocket:"
