@@ -1,9 +1,8 @@
 "use strict";
 
-const tester = require("tester")
-    , showdownHighlight = require("..")
-    , showdown = require('showdown')
-    ;
+import tester from "tester";
+import showdownHighlight from "../lib/index.js";
+import showdown from "showdown";
 
 tester.describe("showdown-highlight", t => {
     const CODEBLOCK_WITH_LANGUAGE = `
